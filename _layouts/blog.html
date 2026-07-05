@@ -1,0 +1,37 @@
+---
+layout: compress
+---
+
+{% include head.html %}
+
+<main>
+  {% include header.html %}
+
+  {{ content }}
+
+  <ul class="blog-posts">
+    {% for post in site.posts %}
+      <li>
+        <span>
+          <i>
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%Y-%m-%d" }}
+            </time>
+          </i>
+        </span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <small>
+    {% for tag in site.tags %}
+      <a href="{{ '/tagged/' | append: tag[0] | append: '/' | relative_url }}">#{{ tag[0] }}</a>
+    {% endfor %}
+  </small>
+</main>
+
+{% include footer.html %}
+
+</body>
+</html>

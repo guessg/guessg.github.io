@@ -1,10 +1,33 @@
-- 👋 Hi, I’m @guessg
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+# guessg
 
-<!---
-guessg/guessg is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+使用 [jekyllBear](https://github.com/knhash/jekyllBear) 构建的个人博客：
+
+<https://guessg.github.io>
+
+## 写文章
+
+在 `_posts` 中创建文件，文件名格式为：
+
+```text
+YYYY-MM-DD-title.md
+```
+
+文章开头使用：
+
+```yaml
+---
+layout: post
+title: "文章标题"
+date: 2026-07-05 12:00:00 +0800
+tags: [general]
+---
+```
+
+推送到 `main` 后，GitHub Pages 会自动更新网站。
+
+## 本地预览
+
+```bash
+bundle install
+bundle exec jekyll serve
+```

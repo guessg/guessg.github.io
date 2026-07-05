@@ -1,0 +1,39 @@
+title: guessg
+description: Notes and thoughts
+lang: zh-CN
+url: "https://guessg.github.io"
+baseurl: ""
+
+remote_theme: knhash/jekyllBear@e9fc24318f7a40dfd9c550d0d9bf510fe5ca4796
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+
+markdown: kramdown
+permalink: /posts/:title/
+timezone: Asia/Shanghai
+future: false
+
+collections:
+  my_tags:
+    output: true
+    permalink: /tagged/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: tagged
+
+# Kept for compatibility with jekyllBear's tag layout.
+Blog: /
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - test
+  - vendor
