@@ -31,3 +31,5 @@ tags: [general]
 bundle install
 bundle exec jekyll serve
 ```
+
+本地预览默认使用端口 `14001`（在 `_config.yml` 中配置）。

@@ -3,6 +3,7 @@ description: Notes and thoughts
 lang: zh-CN
 url: "https://guessg.github.io"
 baseurl: ""
+port: 14001
 
 remote_theme: knhash/jekyllBear@e9fc24318f7a40dfd9c550d0d9bf510fe5ca4796
 
